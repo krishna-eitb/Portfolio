@@ -1,8 +1,8 @@
 
 "use client";
 import React, { useState } from "react";
-// import Link from "next/link";
-import { Link } from 'react-scroll';
+import Link from "next/link";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,24 +15,24 @@ const Header = () => {
     <header className="bg-white text-gray-800 ">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         <div className="text-2xl font-bold">
-          <Link to="/"className="hover:text-gray-600 transition duration-300">Krishna S
+          <Link href="/"className="hover:text-gray-600 transition duration-300">Krishna S
           </Link>
         </div>
         <nav>
           <div className="hidden md:flex justify-center space-x-8 text-lg">
-            <Link to="about" smooth={true} duration={500}   easing="easeInOutQuart"className="hover:text-gray-600 transition duration-300 cursor:pointer">
+            <Link href="#about" smooth={true} duration={500} className="hover:text-gray-600 transition duration-300">
               About
             </Link>
-            <Link to="skills" className="hover:text-gray-600 transition duration-300">
+            <Link href="#skills" className="hover:text-gray-600 transition duration-300">
               Skills
             </Link>
-            <Link to="experience" className="hover:text-gray-600 transition duration-300">
+            <Link href="#experience" className="hover:text-gray-600 transition duration-300">
               Experience
             </Link>
-            <Link to="projects" className="hover:text-gray-600 transition duration-300">
+            <Link href="#projects" className="hover:text-gray-600 transition duration-300">
               Projects
             </Link>
-            <Link to="contact" className="hover:text-gray-600 transition duration-300">
+            <Link href="#contact" className="hover:text-gray-600 transition duration-300">
               Contact Us
             </Link>
           </div>
@@ -67,7 +67,7 @@ const Header = () => {
           <ul className="space-y-6 p-6">
             <li>
               <Link
-                to="about" 
+                href="#about" 
                 className="block text-gray-800 hover:text-gray-600 transition duration-300"
               >
                 About
@@ -75,7 +75,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="skills"
+                href="#skills"
                 className="block text-gray-800 hover:text-gray-600 transition duration-300"
               >
                 Skills
@@ -83,7 +83,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="experience"
+                href="#experience"
                 className="block text-gray-800 hover:text-gray-600 transition duration-300"
               >
                 Experience
@@ -91,7 +91,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="projects"
+                href="#projects"
                 className="block text-gray-800 hover:text-gray-600 transition duration-300"
               >
                 Projects
@@ -99,7 +99,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="contact"
+                href="#contact"
                 className="block text-gray-800 hover:text-gray-600 transition duration-300"
               >
                Reach Out
