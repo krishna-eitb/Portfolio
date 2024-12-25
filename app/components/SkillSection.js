@@ -5,7 +5,7 @@ import { SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 
 export default function SkillSection() {
   return (
-    <section className="h-auto bg-black text-white py-20 relative md:h-dvh" id='skills'>
+    <section className="h-auto bg-black text-white py-20 relative md:h-vh" id='skills'>
       <div className="container mx-auto px-6 text-center">
         {/* Section Title */}
         <motion.h2

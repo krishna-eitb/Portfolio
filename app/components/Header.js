@@ -20,7 +20,7 @@ const Header = () => {
         </div>
         <nav>
           <div className="hidden md:flex justify-center space-x-8 text-lg">
-            <Link href="#about" smooth={true} duration={500} className="hover:text-gray-600 transition duration-300">
+            <Link href="#about"  className="hover:text-gray-600 transition duration-300">
               About
             </Link>
             <Link href="#skills" className="hover:text-gray-600 transition duration-300">
